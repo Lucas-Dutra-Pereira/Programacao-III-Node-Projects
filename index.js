@@ -10,10 +10,9 @@ app.get('/msg',function(req,res){
     res.send("Essa mensagem é automática!")
 })
 
-app.get('/sobre',function(req,res){
-    res.send("Você está visualizando a página Sobre!")
+app.get('/layout',function(req,res){
+    res.send("Esse é o novo Layout!")
 })
-
 
 app.listen(3000,function(){
     console.log("Conexão Inicializada")
