@@ -10,6 +10,10 @@ app.get('/msg',function(req,res){
     res.send("Essa mensagem é automática!")
 })
 
+app.get('/sobre', function(req,res){
+    res.send("Página sobre do site")
+})
+
 app.get('/layout',function(req,res){
     res.send("Esse é o novo Layout!")
 })
