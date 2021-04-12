@@ -22,6 +22,12 @@ app.get('/usuarios', function(req,res){
         {Nome:'Crowley',Email:'mrcrowley1985@outlook.com'}
     ]})
 })
+app.get('/add',function(req,res){
+    res.render('adiciona.ejs')
+})
+app.post('/add',function(req,res){
+    console.log("Nome: " + req.body.txtNome + " Email: " + req.body.txtEmail )
+})
 
 app.listen(3000,function(){
     console.log("Conexão Inicializada")
